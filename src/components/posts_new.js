@@ -37,7 +37,7 @@ class PostsNew extends Component {
     return (
       <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
         <Field labelToShow="Title" name="title" component={this.renderField}/>
-        <Field labelToShow="Category" name="category" component={this.renderField}/>
+        <Field labelToShow="Categories" name="categories" component={this.renderField}/>
         <Field labelToShow="Post Content" name="content" component={this.renderField} />
         <button type="submit" className="btn btn-primary">Submit</button>
         <Link to='/' className="btn btn-danger">Cancel</Link>
